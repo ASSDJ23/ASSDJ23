@@ -3,66 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Tecnología es un Arma de Doble Filo</title>
+    <title>Tecnología: Un arma de doble filo</title>
     <style>
         body {
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            /* Cambia 'imagen_de_fondo.jpg' por la URL de tu imagen de fondo */
-            background-image: url(t.png);
-            background-size: cover;
-            background-position: center;
+            background-color: #ff7e7e; /* Color de fondo del body */
+            font-weight: bold; /* Texto en negrita */
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center; /* Alineación central */
+            display: flex;
+            justify-content: space-between; /* Distribuye los elementos alrededor */
+            align-items: center;
+        }
+        header h2{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        header h1 {
+            margin: 0; /* Elimina el margen predeterminado del h1 */
+            font-size: 24px;
+        }
+        .logo img {
+            width: 100px; /* Ancho del logo */
+            height: auto; /* Altura automática para mantener la proporción */
+            margin-right: 20px; /* Añade espacio entre el logo y el título */
+        }
+        .search-bar {
+            margin-left: auto; /* Empuja la barra de búsqueda hacia la derecha */
+        }
+        .search-bar input[type="text"] {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            width: 200px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
             color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
-        .container {
-            text-align: center;
-            position: relative;
-            padding-top: 50px; /* Espacio para el título */
+        .search-bar button:hover {
+            background-color: #45a049;
         }
-        h1 {
-            font-size: 48px; /* Tamaño de fuente más grande */
-            margin-bottom: 20px;
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center; /* Alineación central */
         }
-        p {
-            font-size: 18px;
-            position: absolute;
-            bottom: 0; /* Posición en la esquina inferior izquierda */
-            left: 10px;
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
         }
-        a {
-            color: white;
+        nav ul li a {
+            color: #fff;
             text-decoration: none;
-            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            font-style: italic; /* Texto en cursiva */
+        }
+        h3 {
+            font-style: italic; /* Texto en cursiva */
+        }
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>La Tecnología es un Arma de Doble Filo</h1>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <p>Propiedad de: <span id="owner_name">Nombre del Dueño</span></p>
-        <a href="https://assdj23.github.io/ASSDJ23/">Visitar Página</a>
-    </div>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo"> <!-- Logo -->
+        </div>
+        <div>
+            <h1>Tecnología: Un arma de doble filo</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#pros-contras">Pros y contras</a></li>
+                    <li><a href="#conclusion">Conclusiones</a></li>
+                    <li><a href="#recomendaciones">recomendaciones</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </div>
+    </header>
+
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>La tecnología ha transformado nuestras vidas de formas inimaginables. Desde la invención de la imprenta hasta la era digital actual, hemos sido testigos de avances increíbles que han cambiado la forma en que vivimos, trabajamos y nos comunicamos.</p>
+        <p>Sin embargo, este progreso también ha traído consigo desafíos significativos. La creciente dependencia de la tecnología, junto con su rápida evolución, plantea dilemas éticos, sociales y ambientales que deben ser abordados con cuidado y consideración.</p>
+    </section>
+
+    <section id="pros-contras">
+        <h2>Pros y contras de la tecnología</h2>
+        <article>
+            <h3>Beneficios de la tecnología</h3>
+            <p>La tecnología ha mejorado la comunicación, facilitando la conexión entre personas de todo el mundo. La aparición de internet y las redes sociales ha permitido compartir información de manera rápida y eficiente, promoviendo la colaboración y el intercambio de ideas.</p>
+            <p>Además, la tecnología ha revolucionado la medicina, permitiendo diagnósticos más precisos, tratamientos innovadores y una atención médica más personalizada. Desde la cirugía robótica hasta la telemedicina, los avances tecnológicos están salvando vidas y mejorando la calidad de vida de millones de personas.</p>
+        </article>
+        <article>
+            <h3>Riesgos y desafíos</h3>
+            <p>Sin embargo, el uso excesivo de la tecnología puede provocar adicción, problemas de salud mental y dependencia. La sobreexposición a dispositivos electrónicos puede afectar negativamente el sueño, la concentración y las relaciones interpersonales.</p>
+            <p>Una forma de equilibrar el uso de la tecnología es estableciendo límites y horarios para su uso. Por ejemplo, puedes programar momentos específicos del día para revisar tus redes sociales o responder correos electrónicos, y luego desconectar en otros momentos para dedicarte a actividades fuera de la pantalla, como hacer ejercicio, leer un libro o pasar tiempo con amigos y familiares. También es útil mantenerse consciente del tiempo que pasas frente a las pantallas y tomar descansos frecuentes para evitar la fatiga.</p>
+            <p>El uso excesivo de la tecnología puede tener efectos negativos en nuestra salud física y mental. Pasar demasiado tiempo frente a pantallas puede causar fatiga ocular, dolores de cabeza e incluso afectar la calidad del sueño. Además, el uso excesivo de redes sociales y dispositivos electrónicos puede llevar a la desconexión social y afectar nuestras relaciones interpersonales. Es importante encontrar un equilibrio en el uso de la tecnología para cuidar nuestra salud y bienestar.</p>
+            <p>Además, la tecnología también plantea preocupaciones éticas y sociales, como la privacidad y la seguridad de los datos personales. El aumento de la vigilancia digital y el uso indebido de la información pueden socavar la confianza en las instituciones y amenazar las libertades individuales.</p>
+        </article>
+    </section>
+    <section id="recomendaciones">
+        <h2>recomendaciones del uso de la TIC</h2>
+        <article>
+            <h3>recomendaciones</h3>
+            <p>La recomendación sobre la edad adecuada para que alguien comience a usar un celular puede variar dependiendo de diversos factores, como la madurez del niño o adolescente, la necesidad de comunicación y supervisión por parte de los padres, y el propósito del uso del teléfono muchos expertos sugieren que los niños comiencen a usar celulares de manera limitada alrededor de los 11 o 12 años, siempre bajo la supervisión y orientación de los padres. Es importante establecer reglas claras sobre el uso del teléfono y educar a los niños sobre la responsabilidad en línea, el comportamiento seguro en internet y el equilibrio entre el tiempo frente a la pantalla y otras actividades.</p>
+        </article>
+    </section>
+    <section id="conclusion">
+        <h2>Conclusiones</h2>
+        <p>La tecnología tiene muchos beneficios pero hoy en día en la sociedad ay un gran problema por como sabemos la tecnología usada de manera inteligente nos puede ayudar mucho pero el problema aquí es que hoy en día la creatividad se está quedando atrás los jóvenes ya no piensan por si mismos cualquier cosa la buscan en inteligencias artificiales por ejemplo su tarea entonces esto provoca que su cerebro deje de razonar ya que el cuerpo desecha lo que no ocupa estamos a tiempo de ponernos a pensar nosotros mismos ponernos a filosofar además de este problema hoy en día niños de 5 años o menos utilizan el celular para todo es como si nacieran con el celular tu le das el celular a un niño se lo quitas después y hacen berrinches así que no es bueno darles el celular a temprana edad y desde pequeños inculcarles el amor por el estudio por qué llegará un día que dependamos completamente de la tecnología y no pensaremos por nosotros mismos para evitar esto ay que utilizar nuestra creatividad</p>
+    </section>
+
+    <section id="video">
+        <h2>Explorando el tema</h2>
+        <iframe width="560" height="315" src="tecno.mp4" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="imagen">
+        <h2>Visualizando la tecnología</h2>
+        <img src="t.png" alt="Imagen representativa de tecnología">
+    </section>
+
+    <footer>
+        <p>Derechos de autor © 2024 - Tecnología: Un arma de doble filo</p>
+    </footer>
 </body>
 </html>
-
